@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Halaman Loginn</title>
+	<title>Halaman Loginnn</title>
 	<link rel="stylesheet" type="text/css" href="admin/assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/login.css">
 
