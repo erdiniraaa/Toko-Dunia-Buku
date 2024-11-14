@@ -28,7 +28,7 @@
       #header .headerBackground{
   width: 1520px;
   height: 250px;
-  background: url(img/background.jpg);
+  background: url(img/background2.jfif);
   background-size: cover; 
 }
 
@@ -127,16 +127,13 @@
 
 <?php
 	if (isset($_POST["login"])) {
-		//$gmail = $_POST["gmail"];
-		//$password = $_POST["password"];
-		//check account pada db
+		
 		$ambil = $koneksi->query("SELECT * FROM pelanggan WHERE gmail_pelanggan='$_POST[gmail]' AND password_pelanggan='$_POST[password]'");
+		
 		//menghitung account yang cocok pada db
 		$akunyangcocok = $ambil->num_rows;
 		if ($akunyangcocok==1) {
 			$_SESSION['pelanggan'] = $ambil->fetch_assoc();
-			//$akun = $ambil->fetch_assoc();
-			//$_SESSION["pelanggan"] = $akun;
 			echo "<script> alert('Login Berhasil'); </script>";
 			echo "<script> location='index.php'; </script>";
 			
