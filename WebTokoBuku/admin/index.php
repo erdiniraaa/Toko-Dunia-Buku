@@ -6,7 +6,7 @@
 
     //harus login
     if (!isset($_SESSION['admin'])) {
-        echo "<script> alert('Anda Belum Login, Silahkan Tekan Ok Untuk Login'); </script>";
+        echo "<script> alert('Anda Belum Login, Silahkan Tekan Ok Untuk Login setelah ini'); </script>";
         echo "<script> location='login.php'; </script>";
         exit();
     }
